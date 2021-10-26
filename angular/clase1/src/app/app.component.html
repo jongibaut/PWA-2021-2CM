@@ -1,0 +1,35 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <input type="text" class="form-control" placeholder="buscar usuario" name="usuarios" (input)="handlerInput($event)" />
+        </div>
+        <div class="col-12">
+            <button class="btn btn-info" (click)="submitButton()">Boton</button>
+            {{contador}}
+        </div>
+        <div class="col-12">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>username</th>
+                        <th>edad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let usuario of usuarios">
+                        <td>{{usuario.id}}</td>
+                        <td>{{usuario.username}}</td>
+                        <td *ngIf="usuario.edad >=18; else menorEdad">es mayor de edad, {{usuario.edad}}</td>
+                        <ng-template #menorEdad>
+                            <td>es menor de edad, {{usuario.edad}}</td>
+                        </ng-template>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>
