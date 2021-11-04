@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  url: 'https://rickandmortyapi.com/api'
+  url: 'http://localhost:4000' // http://localhost:4000/productos => getAll() ( tu conexion al BE )
 };
 
 /*

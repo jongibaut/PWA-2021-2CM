@@ -5,7 +5,7 @@ import { BaseService } from './base.service';
   providedIn: 'root'
 })
 export class CharactersService extends BaseService {
-  endpoint: string = 'character';
+  endpoint: string = 'api/proyectos';
 
   getAll() {
     this.setEndPoint(this.endpoint);
