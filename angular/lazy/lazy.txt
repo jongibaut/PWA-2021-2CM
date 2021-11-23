@@ -1,0 +1,11 @@
+app/
+    core/ (todos los componentes globales al proyecto)
+        layout/ (todos los componentes globales que tengan que ver con el alyout header y footer)
+
+    features/ (los componentes no globales que se van a ir cargando mientras vaya entrando a las rutas, cada una de estas carpetas va a tener routing y su modulo, estas carpetas tambien pueden tener componentes comunes como account)
+        account/ (todos los componentes que tengan que ver ocn la cuenta dle usuario registro, login, recovery, etc.)
+            pages/(los componentes)
+            module y routing
+            componente comun (opcional)
+        home/ (todos los componentes que tengan que ver con el home)
+        productos/ (todos los componentes que tengan que ver con los productos, all, single, create, update)
