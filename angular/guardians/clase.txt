@@ -1,0 +1,28 @@
+Clase Martes 30:
+    - Repaso de lazy
+    - Guardians(middleware para el front, interfaces)
+    - Upload con preview de imagen
+
+estructura lazy
+features/ aca van a estar todos los modulos
+    productos/ modulo
+        /pages
+            /all componente
+            /create componente
+        productos module
+
+ng g c features/productos/pages/all --skipTests
+ng g c features/productos/pages/create
+ng g c features/productos
+ng g m features/productos --routing
+
+Guardians:
+    funcion que va a proteger una ruta "middleware" para el front
+    se ex antes de cargar una ruta
+    ng g(enarate) g(uardian) features/auth
+
+Interfaces de guardians:
+    CanActivate -> activa o descativa el componente //modulo
+    CanLoad -> no carga el componente si no devuelve true  //modulo
+    CanDecativate -> no permite volver atras //modulo
+    CanActivateChild -> un can activate para los chidlren en lazy //children
